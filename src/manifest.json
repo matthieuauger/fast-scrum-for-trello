@@ -5,7 +5,7 @@
   "content_scripts": [
     {
       "matches": ["https://trello.com/*"],
-      "js": ["jquery-2.1.4.min.js","trelloscrum.js"],
+      "js": ["app.js"],
       "css": ["trelloscrum.css"]
     }
   ],

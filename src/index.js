@@ -16,5 +16,4 @@ require('file?name=[name].[ext]!./trelloscrum.css');
 require('file?name=[name].[ext]!./manifest.json');
 
 // js
-require('file?name=[name].[ext]!./trelloscrum.js');
-require('file?name=[name].[ext]!./jquery-2.1.4.min.js');
+require('./trelloscrum.js');
