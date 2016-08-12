@@ -15,4 +15,4 @@ require('./trelloscrum.css');
 require('./manifest.json');
 
 // js
-require('./trelloscrum.js');
+require('./app.js');
