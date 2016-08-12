@@ -1,19 +1,18 @@
-
 // Images
-require('file?name=[name].[ext]!./trello-scrum-icon.png');
-require('file?name=/images/[name].[ext]!./images/points-done.png');
-require('file?name=/images/[name].[ext]!./images/storypoints-icon.png');
-require('file?name=/images/[name].[ext]!./images/trello-scrum-icon_12x12.png');
-require('file?name=/images/[name].[ext]!./images/trello-scrum-icon_18x18.png');
+require('./trello-scrum-icon.png');
+require('./images/points-done.png');
+require('./images/storypoints-icon.png');
+require('./images/trello-scrum-icon_12x12.png');
+require('./images/trello-scrum-icon_18x18.png');
 
 // HTML
-require('file?name=[name].[ext]!./help.html');
+require('./help.html');
 
 // CSS
-require('file?name=[name].[ext]!./trelloscrum.css');
+require('./trelloscrum.css');
 
 // json
-require('file?name=[name].[ext]!./manifest.json');
+require('./manifest.json');
 
 // js
 require('./trelloscrum.js');

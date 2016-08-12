@@ -1,8 +1,16 @@
 var config = {
-    entry: './src',               // entry point
-    output: {                     // output folder
-        path: './dist',           // folder path
-        filename: 'app.js'     // file name
+    entry: './src',
+    output: {
+        path: './dist',
+        filename: 'app.js'
+    },
+    module: {
+        loaders: [
+            {
+                test: /\.(html|json|png|css)$/,
+                loader: 'file?name=/[name].[ext]'
+            }
+        ]
     }
 };
 module.exports = config;
