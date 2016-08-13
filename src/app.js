@@ -6,9 +6,11 @@ var reg = /((?:^|\s?))\((\x3f|\d*\.?\d+)(\))\s?/m, //parse regexp- accepts digit
 
 iconUrl = chrome.extension.getURL('images/storypoints-icon.png');
 
-function List($element) {
-    this.$element = $element;
-    this.cards = [];
+class List {
+    constructor($element) {
+        this.$element = $element;
+        this.cards = []
+    }
 }
 
 function Card($element) {
@@ -57,7 +59,7 @@ function Card($element) {
     };
 
     this.displayFormattedTitle = function() {
-        parsedTitle = $.trim(this.title.replace(reg, '$1').replace(regC, '$1'));
+        var parsedTitle = $.trim(this.title.replace(reg, '$1').replace(regC, '$1'));
         var $title = this.$element.find('a.list-card-title');
         $title[0].childNodes[$title[0].childNodes.length - 1].textContent = parsedTitle
     }
